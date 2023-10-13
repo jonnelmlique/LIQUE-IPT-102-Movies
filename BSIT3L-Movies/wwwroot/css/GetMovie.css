@@ -9,11 +9,14 @@
     text-align: center;
     color: #333;
     padding: 20px 0;
-    background-color: #fff;
+    background-color: #17476c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -29,24 +32,18 @@
 .movie-container {
     flex: 1;
     padding: 50px;
-    border: 50px;
-    border-color: black;
-    /*   display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            margin: 20px;
-            padding: 20px; */
+    background-color: #15232f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .movie-container2 {
     flex: 1;
-    padding: 50px;
-    border: 50px;
-    border-color: red;
+    padding: 30px;
+
 }
 
 .movie-container img {
@@ -56,13 +53,23 @@
 
 .movie-details {
     margin-top: 20px;
-    text-align: center;
+    text-align: justify;
+    padding: 20px 0;
+    background-color: #17476c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
 }
+
 
     .movie-details p {
         margin: 5px 0;
         font-size: 18px;
-        color: #555;
+        color: white;
+        text-transform: uppercase;
     }
 
 .movie-trailer {
@@ -79,6 +86,9 @@
 
     .movie-image img {
         max-width: 100%;
-        max-height: 450px; /* You can adjust this value to make the image smaller */
+        max-height: 450px; 
         height: auto;
+    }
+    .details {
+        text-align: justify;
     }
