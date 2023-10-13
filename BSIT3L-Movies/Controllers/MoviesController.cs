@@ -12,8 +12,8 @@ namespace BSIT3L_Movies.Controllers
             // Sample movie data
             _movies = new List<MovieViewModel>
             {
-               new MovieViewModel { Id = 1, Name = "Titanic", Rating = "5", ReleaseYear = 1997, Genre = "Romance/Drama" },
-            new MovieViewModel { Id = 2, Name = "Inception", Rating = "4", ReleaseYear = 2010, Genre = "Science Fiction/Thriller" },
+            new MovieViewModel { Id = 1, Name = "Titanic", Rating = "5", ReleaseYear = 1997, Genre = "Romance/Drama" },
+            new MovieViewModel { Id = 2, Name = "Inception", Rating = "4", ReleaseYear = 2010, Genre = "Science Fiction/Thriller" , YouTubeVideoId = "Jvurpf91omw", ImageUrl = "https://drive.google.com/uc?id=1igBYoMez4jKVSSEB6wrmExcruXxqCE1-\r\n" },
             new MovieViewModel { Id = 3, Name = "The Shawshank Redemption", Rating = "5", ReleaseYear = 1994, Genre = "Drama" },
             };
         }
