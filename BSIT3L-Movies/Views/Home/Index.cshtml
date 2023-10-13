@@ -5,27 +5,37 @@
 }
 
 
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Rating</th>
-            <th>Release Year</th>
-            <th>Genre</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var movie in Model)
-        {
-            <tr>
-                <td>@movie.Id</td>
-                <td ><a href = "/movies/getmovie/@movie.Id" > @movie.Name </a></td>
-                <td>@movie.Rating</td>
-                <td>@movie.ReleaseYear</td>
-                <td>@movie.Genre</td>
-            </tr>
-        }
-    </tbody>
-</table>
 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">MOVIES</h1>
+        <div class="row">
+            @foreach (var movie in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <a href="/movies/getmovie/@movie.Id" class="card-link">
+                        <div class="card">
+                            <img src="@movie.ImageUrl" alt="@movie.Name" class="card-img-top custom-image" />
+                            <div class="card-body">
+                                <h5 class="card-title">@movie.Name</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
